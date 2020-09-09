@@ -1,0 +1,34 @@
+body, html{
+
+}
+
+
+#vr{
+  z-index: 50;
+  position:absolute;
+  bottom: -43px;
+  left:10px;
+  display: none;
+  height: 343px;
+  width: 200px;
+  background-image:url(../img/raptor.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#vr.show{
+  display: block;
+  animation: myanimation 3s ;
+  animation-timing-function: linear;
+}
+
+@keyframes myanimation
+{
+  from {
+    left:0;
+  }
+
+  to {
+    left:100%;
+  }
+}
